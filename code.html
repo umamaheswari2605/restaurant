@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Hub - Restaurant in Chennai</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+        .landing {
+            background: linear-gradient(
+                rgba(0,0,0,0.6),
+                rgba(0,0,0,0.6)
+            ),
+            url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        header a {
+            text-decoration: none;
+            color: #ffd700;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 30px;
+            font-size: 16px;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5500;
+        }
+        .maintext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            max-width: 700px;
+        }
+
+        .tagline1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ff3c00;
+            margin-bottom: 15px;
+        }
+
+        .tagline2 {
+            font-size: 22px;
+            color: #dddddd;
+            margin-bottom: 25px;
+        }
+
+        .callus {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #ffd700;
+        }
+        button {
+            padding: 14px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            background-color: #ff3c00;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffd700;
+            color: #000;
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin-left: 15px;
+            }
+
+            .tagline1 {
+                font-size: 34px;
+            }
+
+            .tagline2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="landing">
+        <header>
+            <a href="#">Spicy Hub</a>
+
+            <nav>
+    <a href="menu.html">Menu</a>
+    <a href="location.html">Location</a>
+    <a href="contact.html">Contact</a>
+</nav>
+            </nav>
+        </header>
+
+        <div class="maintext">
+            <div class="tagline1">
+                Finest Treat for Your Taste Buds
+            </div>
+
+            <div class="tagline2">
+                Freshest Ingredients Guaranteed
+            </div>
+
+            <div class="callus">
+                Call Us: +91 9988776655
+            </div>
+
+            <a href="addtocart.html"> <button>Order Online</button></a>
+        </div>
+    </div>
+</body>
+</html>
